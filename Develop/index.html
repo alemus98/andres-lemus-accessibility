@@ -3,14 +3,19 @@
 
 <head>
     <meta charset="UTF-8" />
+    <!-- added reset.css file -->
+    <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- changed title to company name -->
     <title>Horiseon</title>
 </head>
 
 <body>
-    <nav>
+    <!-- changed div to header -->
+    <header>
         <h1>Hori<span class="seo">seo</span>n</h1>
-        <div>
+        <!-- changed to nav -->
+        <nav>
             <ul>
                 <li>
                     <a href="#search-engine-optimization">Search Engine Optimization</a>
@@ -22,10 +27,15 @@
                     <a href="#social-media-marketing">Social Media Marketing</a>
                 </li>
             </ul>
-        </div>
-    </nav>
-    <div class="group-project"></div>
+        </nav>
+    </header>
+    <!-- added image under to add alt text to background image but hid it in order for it to work in css the way it was by default -->
+    <div class="hero">
+        <img src="./assets/images/digital-marketing-meeting.jpg" alt="four people working on project together" hidden>
+    </div>
+    <!-- added new semantic of section to replace div -->
     <section>
+        <!-- put an article to replace div organized each heading to have the same class but unique id to more easily group them in css -->
         <article class="information" id="search-engine-optimization">
             <img src="./assets/images/search-engine-optimization.jpg" alt="notebook with the word SEO written on the middle" class="float-left" />
             <h2>Search Engine Optimization</h2>
@@ -48,22 +58,23 @@
             </p>
         </article>
     </section>
+    <!-- changed div to aside element -->
     <aside>
-        <div class="sidebar">
+        <div class="sidebar" id="lead-Generation">
             <h3>Lead Generation</h3>
             <img src="./assets/images/lead-generation.png" alt="icon of half a gear on top of a downward arrow pointing to a dollar sign" />
             <p>
                 Inbound strategies for lead generation require less work for your business, bringing customers directly to your website.
             </p>
         </div>
-        <div class="sidebar">
+        <div class="sidebar" id="Brand-awareness">
             <h3>Brand Awareness</h3>
             <img src="./assets/images/brand-awareness.png" alt="icon of lightbulb signaling" />
             <p>
                 Users find your business through paid and organic searches, increasing the search ranking and visibility for your business.
             </p>
         </div>
-        <div class="sidebar">
+        <div class="sidebar" id="Cost-Management">
             <h3>Cost Management</h3>
             <img src="./assets/images/cost-management.png" alt="icon of gear and dollor sign" />
             <p>
@@ -71,8 +82,9 @@
             </p>
         </div>
     </aside>
+    <!-- added a footer element -->
     <footer>
-        <h2>Made with ❤️️ by Horiseon</h2>
+        <h4>Made with ❤️️ by Horiseon</h4>
         <p>
             &copy; 2019 Horiseon Social Solution Services, Inc.
         </p>

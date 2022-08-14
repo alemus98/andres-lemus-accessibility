@@ -8,23 +8,24 @@ body {
     background-color: #d9dcd6;
 }
 
-nav {
+/* changed previous codes to header to match the changes in html */
+header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
     color: #ffffff;
 }
 
-nav h1 {
+header h1 {
     display: inline-block;
     font-size: 48px;
 }
 
-nav h1 .seo {
+header h1 .seo {
     color: #d9dcd6;
 }
 
-nav div {
+header nav {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
@@ -32,11 +33,11 @@ nav div {
     font-size: 20px;
 }
 
-nav div ul {
+header nav ul {
     list-style-type: none;
 }
 
-nav div ul li {
+header nav ul li {
     display: inline-block;
     margin-left: 25px;
 }
@@ -50,11 +51,11 @@ p {
     font-size: 16px;
 }
 
-.group-project {
+.hero {
     height: 800px;
     width: 100%;
     margin-bottom: 25px;
-    content: url("../images/digital-marketing-meeting.jpg") / "Four people working on project together";
+    background-image: url("../images/digital-marketing-meeting.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -74,7 +75,7 @@ section {
     display: inline-block;
     margin-left: 20px;
 }
-
+/* changed to aside to match with html */
 aside {
     margin-right: 20px;
     padding: 20px;
@@ -101,7 +102,7 @@ aside {
     margin: 10px auto;
     max-width: 150px;
 }
-
+/* removed extra codes because now all the articles share a class */
 .information {
     margin-bottom: 20px;
     padding: 50px;
@@ -120,6 +121,7 @@ aside {
     font-size: 36px;
 }
 
+/* changed previous div to footer */
 footer {
     padding: 30px;
     clear: both;
@@ -127,6 +129,6 @@ footer {
     text-align: center;
 }
 
-footer h2 {
+footer h4 {
     font-size: 20px;
 }
